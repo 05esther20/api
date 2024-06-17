@@ -7,7 +7,39 @@
 </head>
 <body>
     <div id="tab">
-        ul>li*3>
+        <ul>
+            <li button class="btn">tab1</li>
+            <li button class="btn">tab2</li>
+            <li button class="btn">tab3</li>
+        </ul>
+        <div id="tabcontent">
+            <p></p>
+            <p></p>
+        </div>    
     </div>
+    <script>
+        const mapinfo=[
+            {
+                위도:"33.450701", 
+                경도:"126.570667"
+            },
+            {
+                위도:"ㄹㄹㄹㄹ", 
+                경도:"ㅁㅁㅁㅁ"
+            },
+            {
+                위도:"ㅋㅋㅋㅋㅋ", 
+                경도:"ㅇㅇㅇㅇ"
+            }
+        ]
+        // const targetdiv = document.getElementById("tabcontent");
+        const targetdiv = document.querySelectorAll("#tabcontent p");
+        targetdiv.forEach(function(ele, idx){
+            ele.innerHTML = mapinfo[0].위도;
+            ele.innerHTML = mapinfo[0].경도;
+        })
+        targetdiv[0].innerHTML = mapinfo[1].위도;
+        targetdiv[1].innerHTML = mapinfo[1].경도;
+    </script>
 </body>
 </html>
