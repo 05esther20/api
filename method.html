@@ -8,9 +8,9 @@
 <body>
     <div id="tab">
         <ul>
-            <li><button class="btn">tab1</button></li>
-            <li><button class="btn">tab2</button></li>
-            <li><button class="btn">tab3</button></li>
+            <li><button class="btn">신도림</button></li>
+            <li><button class="btn">미금</button></li>
+            <li><button class="btn">강남</button></li>
         </ul>
         <div id="tabcontent">
             <p></p>
@@ -43,7 +43,7 @@
             })
         })
         
-        function contentinner(num){
+        function contentinner(num){ //선언적함수 위치상관없이 먼저 번역 저장
             targetdivp[0].innerHTML = mapinfo[num].위도;
             targetdivp[1].innerHTML = mapinfo[num].경도;
         }
