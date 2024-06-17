@@ -15,12 +15,12 @@
 <script>
     // 37.5069739187173, 126.890319120085
     
-    mapoutput(37.5069739187173, 126.890319120085);
+    mapoutput(37.5069739187173, 126.890319120085); //실행할때 값
     
-    function mapoutput(a, b){
+    function mapoutput(a, b){ // 모형
         const mapContainer = document.getElementById('map'), 
     mapOption = { 
-        center: new kakao.maps.LatLng(37.5069739187173, 126.890319120085), 
+        center: new kakao.maps.LatLng(a,b), 
         level: 3
     };
 
